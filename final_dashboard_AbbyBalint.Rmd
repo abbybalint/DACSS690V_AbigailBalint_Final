@@ -1,0 +1,50 @@
+---
+title: "Abigail Balint - DACSS 690V Final Dashboard"
+bibliography: AbigailBalintSources.bib
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard) # always
+```
+
+## Intro {.sidebar}
+
+Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @sievert_flexdashboard_2022.
+
+### References
+<div id="refs"></div>
+“The Global AI, ML, Data Science Salary Index for 2024.” AI-Jobs, 2024, ai-jobs.net/salaries/2024/"
+
+## Column {data-width="450"}
+
+### Barplot - Work Location of Job Listings from Database
+
+```{r}
+readRDS("deliverable1.rds")
+```
+
+### Histogram - Number of Jobs Available in Database by Listed Salary
+
+```{r}
+readRDS("deliverable2.rds")
+```
+
+## Column {data-width="550"}
+
+### Cat-Cat Bivariate Plot - Percentage of Jobs 2020-2024 that are Remote, Hybrid, vs In-Person
+
+```{r}
+readRDS("deliverable3.rds")
+```
+
+
+### Map - Map of the World Plotting Calculated Average Salary for Data Science Jobs by Country
+
+```{r}
+readRDS("deliverable4.rds")
+```
+
+
