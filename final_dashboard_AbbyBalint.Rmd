@@ -14,6 +14,9 @@ library(flexdashboard) # always
 
 Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @sievert_flexdashboard_2022.
 
+You can find the code for this dashboard here: https://github.com/abbybalint/DACSS690V_AbigailBalint_Final
+
+
 ### References
 <div id="refs"></div>
 “The Global AI, ML, Data Science Salary Index for 2024.” AI-Jobs, 2024, ai-jobs.net/salaries/2024/"
