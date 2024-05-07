@@ -1,5 +1,5 @@
 ---
-title: "My Storyboard at DACSS - tabs"
+title: "Abigail Balint - Final Project DACSS690V Spring 2024"
 bibliography: AbigailBalintSources.bib
 output: 
   flexdashboard::flex_dashboard
