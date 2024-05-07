@@ -1,0 +1,50 @@
+---
+title: "My Storyboard at DACSS - tabs"
+bibliography: AbigailBalintSources.bib
+output: 
+  flexdashboard::flex_dashboard
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard) # always
+```
+
+## Sidebar {.sidebar}
+
+
+Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @aden-buie_flexdashboard_2023.
+
+You can find the code for this dashboard here: https://github.com/abbybalint/DACSS690V_AbigailBalint_Final
+
+## Column {.tabset .tabset-fade}
+
+
+### Barplot - Work Location of Job Listings from Database
+
+```{r}
+readRDS("deliverable1.rds")
+```
+
+
+### Histogram - Number of Jobs Available in Database by Listed Salary
+
+```{r}
+readRDS("deliverable2.rds")
+```
+
+### Cat-Cat Bivariate Plot - Percentage of Jobs 2020-2024 that are Remote, Hybrid, vs In-Person
+
+```{r}
+readRDS("deliverable3.rds")
+```
+
+
+### Map - Map of the World Plotting Calculated Average Salary for Data Science Jobs by Country
+
+```{r}
+readRDS("deliverable4.rds")
+```
+
+
+### References 
+Source: “The Global AI, ML, Data Science Salary Index for 2024.” AI-Jobs, 2024, ai-jobs.net/salaries/2024/
