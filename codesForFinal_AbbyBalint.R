@@ -122,9 +122,9 @@ head(myMapWorldDataJob)
 
 #creating breaks and labels for my map intervals
 
-breaks <- c(0, 50000, 75000, 100000, 125000, 150000, 200000, Inf)
+breaks <- c(0, 50000, 100000, 200000, Inf)
 
-labels <- c("Under 50k USD", "50k to 75k USD", "75k to 100k USD", "100k to 125k USD", "125k to 150k USD", "150k to 200k USD", "Over 200k USD")
+labels <- c("Under 50k USD", "50k to 100k USD", "100k to 200k USD", "Over 200k USD")
 
 # Cut the data into same intervals 
 myMapWorldDataJob$SalaryRange <- cut(myMapWorldDataJob$salary_in_usd, breaks = breaks, labels = labels, right = FALSE)
@@ -136,9 +136,8 @@ base <- ggplot(myMapWorldDataJob)
 deliverable4 <- base + 
   geom_sf(aes(fill = SalaryRange)) +
   scale_fill_manual(
-    values = c("Under 50k USD" = "red", "50k to 75k USD" = "orange", 
-               "75k to 100k USD" = "yellow", "100k to 125k USD" = "green", 
-               "125k to 150k USD" = "blue", "150k to 200k USD" = "purple", "Over 200k USD" = "lavender" )) +
+    values = c("Under 50k USD" = "green", "50k to 100k USD" = "blue", 
+               "100k to 200k USD" = "purple", "Over 200k USD" = "lavender" )) +
   labs(title="What is the average data science job salary range around the world?",
      subtitle = "Average Data Science Job Salary by Range on World Map (USD)",
      caption = "Source: “The Global AI, ML, Data Science Salary Index for 2024.” AI-Jobs, 2024, ai-jobs.net/salaries/2024/",
